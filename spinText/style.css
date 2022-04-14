@@ -1,0 +1,42 @@
+body {
+  background: #ff008b;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  border: 10px solid white;
+  gap: 10px;
+  align-items: center;
+  padding: 50px 30px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+li {
+  transition: 0.9s;
+  list-style: none;
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul:hover li {
+  transform: rotateY(360deg);
+  cursor: pointer;
+}
+ul:hover li:nth-child(1) {
+  transition-delay: 0.9s;
+}
+
+ul:hover li:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+ul:hover li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+ul:hover li:nth-child(4) {
+  transition-delay: 0.1s;
+}
