@@ -3,13 +3,27 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
-    "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "clear": "rd /s /q dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "module_name": "^1.0.0",
     "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.2.0"
   }
 }
